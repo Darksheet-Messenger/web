@@ -1,0 +1,240 @@
+#login-page {
+    width: 100vw;
+    height: 100vh;
+    background: #202c33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#login-top {
+    background: var(--color-mirage);
+    width: 100%;
+    padding: 2.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.315);
+}
+
+#login-top h1 {
+    font-family: 'Lobster', cursive;
+    color: rgb(218, 217, 235);
+}
+
+#login-content {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    background: var(--color-hippie-blue);
+    padding: 2rem;
+    width: 90%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 0 0 4px #cdcdcd75;
+}
+
+#login-content form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 2%;
+    width: 100%;
+    border-top: 1px solid #cdcdcd;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    /*background-color: #425291;*/
+    background-color: #4896a3;
+}
+
+#login-content > div:first-child {
+    width: 100%;
+    
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+#login-content div h1 {
+    font-family: 'Acme', sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: rgb(218, 217, 235);
+}
+
+#input-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+}
+
+/* #input-block label {
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(218, 217, 235)
+} */
+
+
+#input-block input {
+    padding: 2.6%;
+    border: 3px inset var(--color-sail);
+    background-color: rgb(218, 217, 235);; 
+    border-top: none;
+    border-right: none;
+    border-radius: 4px;
+    width: 90%;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-left: 1%;
+}
+
+#btn-submit {
+    margin-top: 10px;
+    padding: 4%;
+    width: 40%;
+    background: var(--color-hippie-blue);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#links {
+    margin-top: 10px;
+}
+
+#links a {
+    color: #cdcdcd;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 2%;
+    background: var(--color-mirage);
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.315);
+}
+
+footer h2 {
+    font-family: 'Archivo', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(218, 217, 235);
+}
+
+.signup {
+    margin-top: 4px;
+    padding: 2%;
+    background: var(--color-sail);
+    border: none;
+    font-family: 'Acme', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    color: rgb(123, 124, 128);
+    cursor: pointer;
+}
+
+@media (min-width: 600px){
+    #login-top h1 {
+        font-size: 2.5rem;
+    }
+
+    #login-content {
+        width: 80%;
+    }
+
+    #login-content div h1 {
+        font-size: 2rem;
+    }
+
+    #input-block input {
+        padding: 2%;
+    }
+
+    #btn-submit {
+        padding: 3%;
+        width: 30%;
+    }
+}
+
+@media (min-width: 1100px) {
+    #login-top {
+        padding: 0.5%;
+    }
+    #login-top h1 {
+        font-size: 2.5rem;
+    }
+
+    #login-content {
+        padding: 1rem;
+        height: 50%;
+        width: 50%;
+    }
+
+    #login-content > div:first-child {
+        padding-bottom: 0;
+    }
+
+    #login-content div h1 {
+        font-size: 2rem;
+    }
+
+    #login-content form {
+        height: 60%;
+        width: 85%;
+        border-top-width: 2px;
+        justify-content: space-around;
+    }
+
+    #input-block {
+        width: 90%;
+    }
+
+    #input-block input {
+        padding: 2%;
+    }
+
+    #btn-submit {
+        padding: 2%;
+        width: 30%;
+    }
+
+    #btn-submit:hover {
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+    }
+
+    .signup {
+        padding: 0.8%;
+        color: rgb(108, 115, 139);
+    }
+
+    .signup:hover {
+        background-color: #9dc9e7;
+        box-shadow: 0 0 7px rgba(255, 255, 255, 0.5);
+        color: rgb(99, 107, 136);
+    }
+
+    footer {
+        padding: 1%;
+    }
+
+    footer h2{
+        display: none;
+    }
+
+    footer button {
+        display: none;
+    }
+}
