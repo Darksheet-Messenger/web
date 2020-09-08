@@ -1,0 +1,22 @@
+:root {
+    --color-mirage: #1b262c;
+    --color-chathams-blue: #0f4c75;
+    --color-boston-blue: #3282b8;
+    --color-sail: #bbe1fa;
+    --color-martinique: #3b2e5a;
+    --color-chambray: #394989;
+    --color-hippie-blue: #4ea0ae;
+    --color-witch-haze: #fff48f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
